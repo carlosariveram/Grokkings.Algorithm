@@ -26,6 +26,9 @@ namespace Algorithm.Test.BinarySearch
 
         }
 
+        /// <summary>
+        /// Searches for the number in a shor collection of objects
+        /// </summary>
         [TestMethod]
         public void VerifyTimeInSearch_Search_BinaryVsRegula()
         {
@@ -71,6 +74,9 @@ namespace Algorithm.Test.BinarySearch
 
         }
 
+        /// <summary>
+        /// Searches for the number in a large collection of objects
+        /// </summary>
         [TestMethod]
         public void VerifyTimeInSearchIncreasedElements_Search_BinaryVsRegula()
         {
