@@ -10,3 +10,7 @@ The running time of a regular search where each element needs to be checked is o
 - Chapter 2: Selection Sort
 
 Execution time of this algorithm is of O(n^2). Which means that in the same way the array length increases, the execution time of the algorithm grows exponentially.
+
+- Chapter 3: Introduction to recursions
+
+In this chapter recursions are being presented as a medium to simplify code readbility and will be the base of other data structures and algorithms. In the code we can see a very simple scenario where recursions can be used. We must observe that recursions do not optimize the code, actually its performance is one of their disadvantages when compare with regular loops.

@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="BinarySearch\SearchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursion\RecursionTest.cs" />
     <Compile Include="SelectionSortTest\SortTest.cs" />
   </ItemGroup>
   <ItemGroup>

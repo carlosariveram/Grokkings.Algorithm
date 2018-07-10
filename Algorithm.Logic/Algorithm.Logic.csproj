@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="BinarySearch\Search.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursion\Recursion.cs" />
     <Compile Include="SelectionSort\Sort.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
