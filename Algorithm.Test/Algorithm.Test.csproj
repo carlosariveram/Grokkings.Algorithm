@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="BinarySearch\SearchTest.cs" />
     <Compile Include="DivideConquer\ArraySumTest.cs" />
+    <Compile Include="DivideConquer\ListItemCountTest.cs" />
     <Compile Include="DivideConquer\EuclidAlgorithmTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion\RecursionTest.cs" />

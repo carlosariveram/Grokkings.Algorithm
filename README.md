@@ -17,6 +17,7 @@ In this chapter recursions are being presented as a medium to simplify code read
 
 - Chapter 4: D & C - Divide and Conquer
 
-Divide and conquer is a strategy to create algorithms that aims to solve problems by dividing them in smallest issues which are easier to solve. In chapter 4 we will see the implementation of Euclid's algorithm to find the Greatest Common Divisor and Quicksort algorithm.
-Divide and conquer uses recursion very deeply by dividing the problem in a base case (where the recursion breaks) and the recursion scenario (the simplified version of the problem).
-Also we have defined a function that sums the elements of an array and returns its total using D&C approach.
+Divide and conquer is a strategy to create algorithms that aims to solve problems by dividing them in smallest issues which are easier to solve. In chapter 4 we will see the implementation of Euclid's algorithm to find the Greatest Common Divisor and Quicksort algorithm.  
+Divide and conquer uses recursion very deeply by dividing the problem in a base case (where the recursion breaks) and the recursion scenario (the simplified version of the problem).  
+Also we have defined a function that sums the elements of an array and returns its total using D&C approach.  
+Added a function that count the number of elements in a list.  
