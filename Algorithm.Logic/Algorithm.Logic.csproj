@@ -45,6 +45,7 @@
     <Compile Include="DivideConquer\EuclidAlgorithm.cs" />
     <Compile Include="DivideConquer\ListItemCount.cs" />
     <Compile Include="DivideConquer\MaximumNumber.cs" />
+    <Compile Include="DivideConquer\Quicksort.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion\Recursion.cs" />
     <Compile Include="SelectionSort\Sort.cs" />

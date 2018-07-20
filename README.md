@@ -23,3 +23,5 @@ Defined the following functions using D&C approach:
 a. Sums the elements of an array.  
 b. Count the number of elements in a list.  
 c. Find the maximum number in a list.  
+  
+Quicksort algorithm
