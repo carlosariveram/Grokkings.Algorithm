@@ -24,4 +24,14 @@ a. Sums the elements of an array.
 b. Count the number of elements in a list.  
 c. Find the maximum number in a list.  
   
-Quicksort algorithm
+Quicksort algorithm  
+  
+- Chapter 5: Hash tables
+
+Is a combination of an Array and Hash functions that translates an index to a unique position of an element of the array. In C# hash tables are implemented as dictionary.
+
+- Chapter 6: Breadth-first search
+
+This chapter introduces a new data structure called graphs. Graphs are composed of 2 elements: nodes and edges.  
+Additionally,  the shortest path algorithm is introduced in this unit. This technique helps find the shortest path between two points, that is, for example among a group of nodes it help us to find the shortest path  to a destination.
+

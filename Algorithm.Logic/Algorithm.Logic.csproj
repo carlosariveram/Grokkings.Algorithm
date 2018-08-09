@@ -49,7 +49,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recursion\Recursion.cs" />
     <Compile Include="SelectionSort\Sort.cs" />
+    <Compile Include="ShortestPath\Models\Node.cs" />
+    <Compile Include="ShortestPath\ShortestPath.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
