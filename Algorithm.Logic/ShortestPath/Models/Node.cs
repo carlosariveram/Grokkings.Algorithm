@@ -22,9 +22,14 @@ namespace Algorithm.Logic.ShortestPath.Models
         /// </summary>
         public List<Node<T>> Neighbours { get; set; }
 
+        /// <summary>
+        /// Node Parent
+        /// </summary>
+        public Node<T> Parent { get; set; }
+
 
         /// <summary>
-        /// Default Controller
+        /// Default Constructor
         /// </summary>
         public Node()
         {
@@ -37,7 +42,8 @@ namespace Algorithm.Logic.ShortestPath.Models
         /// <param name="nodeContent"></param>
         public Node(T nodeContent)
         {
-            this.NodeContent = NodeContent;
+            this.NodeContent = nodeContent;
+            this.Neighbours = new List<Node<T>>();
         }
 
 
@@ -63,6 +69,16 @@ namespace Algorithm.Logic.ShortestPath.Models
         {
             var node = Neighbours.FirstOrDefault(x => x.NodeContent.Equals(element));
             return node;
+        }
+
+        /// <summary>
+        /// Adds a neighbour
+        /// </summary>
+        /// <param name="neighbour"></param>
+        public void AddNeighbour(Node<T> neighbour)
+        {
+            neighbour.Parent = this;
+            Neighbours.Add(neighbour);
         }
     }
 }

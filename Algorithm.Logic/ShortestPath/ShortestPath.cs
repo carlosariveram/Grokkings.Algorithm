@@ -7,12 +7,26 @@ using System.Threading.Tasks;
 
 namespace Algorithm.Logic.ShortestPath
 {
+    /// <summary>
+    /// Shortest Path Algorithm
+    /// </summary>
     public class ShortestPath
     {
-        public Stack<Node<T>> FindShortestPath<T>(Node<T> node, Queue<Node<T>> nodesToVerify, T elementToFind, Stack<Node<T>> nodesVerified)
+        /// <summary>
+        /// Finds the shortest path
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="node"></param>
+        /// <param name="nodesToVerify"></param>
+        /// <param name="elementToFind"></param>
+        /// <param name="nodesVerified"></param>
+        /// <returns></returns>
+        public Node<T> FindShortestPath<T>(Queue<Node<T>> nodesToVerify, T elementToFind, Stack<Node<T>> nodesVerified)
         {
-            if (node == null)
+            if (nodesToVerify.Count == 0)
                 return null;
+
+            var node = nodesToVerify.Dequeue();
 
             if (!nodesVerified.Any(x => x.NodeContent.Equals(node.NodeContent)))
                 node.Neighbours.ForEach(x => nodesToVerify.Enqueue(x));
@@ -20,11 +34,9 @@ namespace Algorithm.Logic.ShortestPath
             nodesVerified.Push(node);
 
             if (elementToFind.Equals(node.NodeContent))
-                return nodesVerified;
+                return node;
 
-            var newNode = nodesToVerify.Dequeue();
-
-            return FindShortestPath<T>(newNode, nodesToVerify, elementToFind, nodesVerified);
+            return FindShortestPath<T>(nodesToVerify, elementToFind, nodesVerified);
         }
     }
 }
